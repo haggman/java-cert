@@ -1,6 +1,6 @@
 package com.roitraining.cert.classes_and_objects;
 
-public class InnerClasses {
+public class OuterClass {
     private int luckyNumber;
     private static String msg;
 
@@ -26,25 +26,27 @@ public class InnerClasses {
             System.out.println("In StaticInner, and msg = " + msg);
         }
     }
+//Uncomment below to explore working with inner classes from Inside the containing class
+
 //    public static void main(String[] args) {
-//        InnerClasses.StaticInner si = new InnerClasses.StaticInner(); //static method main, so this is fine
+//        OuterClass.StaticInner si = new OuterClass.StaticInner(); //static method main, so this is fine
 //        //Prints: In StaticInner, and msg = Hello
 //        //TypicalInner ti = new TypicalInner();//compile error
-//        InnerClasses ic = new InnerClasses();
-//        InnerClasses.TypicalInner ti = ic.new TypicalInner();
+//        OuterClass ic = new OuterClass();
+//        OuterClass.TypicalInner ti = ic.new TypicalInner();
 //        //Prints: In TypicalInner, and luckyNumber = 13
-//        InnerClasses.HiddenInner hi = ic.new HiddenInner();
+//        OuterClass.HiddenInner hi = ic.new HiddenInner();
 //        //Prints: In HiddenInner, and luckyNumber = 7
 //    }
 }
 class Runner{
     public static void main(String[] args) {
-        InnerClasses.StaticInner si = new InnerClasses.StaticInner(); //static method main, so this is fine
+        OuterClass.StaticInner si = new OuterClass.StaticInner(); //static method main, so this is fine
         //Prints: In StaticInner, and msg = Hello
         //TypicalInner ti = new TypicalInner();//compile error
-        InnerClasses ic = new InnerClasses();
-        InnerClasses.TypicalInner ti = ic.new TypicalInner();
+        OuterClass ic = new OuterClass();
+        OuterClass.TypicalInner ti = ic.new TypicalInner();
         //Prints: In TypicalInner, and luckyNumber = 13
-        //InnerClasses.HiddenInner hi = ic.new HiddenInner(); //Compile error
+        //OuterClass.HiddenInner hi = ic.new HiddenInner(); //Compile error
     }
 }

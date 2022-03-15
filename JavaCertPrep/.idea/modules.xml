@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaCertPrep.iml" filepath="$PROJECT_DIR$/JavaCertPrep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.roitraining.cert.servicefun.impl/com.roitraining.cert.servicefun.impl.iml" filepath="$PROJECT_DIR$/com.roitraining.cert.servicefun.impl/com.roitraining.cert.servicefun.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.roitraining.cert.servicefun.spi/com.roitraining.cert.servicefun.spi.iml" filepath="$PROJECT_DIR$/com.roitraining.cert.servicefun.spi/com.roitraining.cert.servicefun.spi.iml" />
     </modules>
   </component>
 </project>

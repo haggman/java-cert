@@ -7,5 +7,8 @@ module com.roitraining.cert { //note package style naming convention
 
     //cannot have a requires, and requires transitive on same package
     //requires java.sql; would mean these packages need it, but the caller may not
-    requires transitive java.sql; //Makes sure the module is transitively available to caller
+    requires transitive java.sql;
+    requires com.roitraining.cert.servicefun.spi;
+    uses com.roitraining.cert.servicefun.spi.TransportService;
+    requires com.roitraining.cert.servicefun.impl;
 }

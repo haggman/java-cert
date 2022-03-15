@@ -8,6 +8,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="com.roitraining.cert.servicefun.spi" />
-    <orderEntry type="module" module-name="com.roitraining.cert.servicefun.impl" />
   </component>
 </module>
